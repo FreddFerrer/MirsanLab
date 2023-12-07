@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background: linear-gradient(to right, #2C282D, #F7F9F9);
+
+
+html {
+    scroll-behavior: smooth;
 }
+
+.shadow-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }

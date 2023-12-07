@@ -1,1 +1,277 @@
-<router-outlet></router-outlet>
+
+  <!--HEADER-->
+  <div class="w-full">
+    <nav class="bg-gradient-to-r from-[#7bc2b0] to-[#e5f9f6]">
+        <div class="md:flex items-center justify-between py-2 px-8 md:px-12">
+            <div class="flex justify-between items-center">
+                <img src="assets/img/MirsanLogo.png" alt="Mirsan Lab. Logo" class="h-10 w-10">
+               <div class="text-2xl font-bold text-[#444747] md:text-3xl px-4 shadow-text">
+                    <a href="#">Mirsan Lab.</a>
+               </div>
+                <div class="md:hidden">
+                    <button type="button" class="block text-[#ede1d9] hover:text-gray-700 focus:text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path class="hidden" d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"/>
+                            <path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row hidden md:block -mx-2">
+                <a href="#" class="text-[#444747] rounded hover:bg-[#7bc2b0] hover:text-[#4d433f] hover:font-medium py-2 px-2 md:mx-2 transition duration-300 ease-in-out transform hover:scale-110">Home</a>
+                <a href="#" class="text-[#444747] rounded hover:bg-[#7bc2b0] hover:text-[#4d433f] hover:font-medium py-2 px-2 md:mx-2 transition duration-300 ease-in-out transform hover:scale-110">Nosotros</a>
+                <a href="#contact-form" class="text-[#444747] rounded hover:bg-[#7bc2b0] hover:text-[#4d433f] hover:font-medium py-2 px-2 md:mx-2 transition duration-300 ease-in-out transform hover:scale-110">Contacto</a>
+            </div>
+            
+        </div>
+    </nav>
+    <div class="flex bg-gradient-to-r from-[#7bc2b0] to-[#e5f9f6]" style="height:500px;">
+        <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
+            <div>
+                <h1 class="text-3xl font-semibold text-[#444747] md:text-4xl shadow-text">Tu laboratorio de confianza</h1>
+                <p class="mt-2 font-semibold text-sm text-[#444747] md:text-base">En nuestro laboratorio, no solo nos especializamos en pruebas y análisis de alta precisión, sino que también nos dedicamos a brindar una experiencia única para cada paciente.</p>
+                <div class="flex justify-center lg:justify-start mt-6">
+                    <a href="#contact-form" class="px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800">Contáctenos</a>
+                    <a class="mx-4 px-4 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400" href="#">Servicios</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hidden lg:block lg:w-1/2" style="clip-path:polygon(25% 0, 100% 0%, 100% 100%, 0 100%)">
+            <div class="h-full bg-cover bg-center" style="background-image: url('assets/img/analisis-fondo.jpg')">
+                <div class="h-full bg-black opacity-25"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+  <!--CUERPO-->
+  <div class="bg-gradient-to-r from-[#7bc2b0] to-[#e5f9f6] py-1">
+    <div class="container mx-auto ">
+
+        <div class="relative rounded-lg flex flex-col md:flex-row items-center md:shadow-xl md:h-72 mx-2">
+            
+            <div class="z-0 order-1 md:order-2 relative w-full md:w-2/5 h-80 md:h-full overflow-hidden rounded-lg md:rounded-none md:rounded-r-lg">
+                <div class="absolute inset-0 w-full h-full object-fill object-center bg-blue-400 bg-opacity-30 bg-cover bg-bottom" style="background-image: url( https://images.unsplash.com/photo-1525302220185-c387a117886e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80 ); background-blend-mode: multiply;"></div>
+                <div class="md:hidden absolute inset-0 h-full p-6 pb-6 flex flex-col-reverse justify-start items-start bg-gradient-to-b from-transparent via-transparent to-gray-900">
+                    <h3 class="w-full font-bold text-2xl text-white leading-tight mb-2">HOTEL AMANEE</h3>
+                    <h4 class="w-full text-xl text-gray-100 leading-tight">Bienvenido a</h4>
+                </div>
+                <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                </svg>
+            </div>
+    
+            <div class="z-10 order-2 md:order-1 w-full h-full md:w-3/5 flex items-center -mt-6 md:mt-0">
+                <div class="p-8 md:pr-18 md:pl-14 md:py-12 mx-2 md:mx-0 h-full bg-white rounded-lg md:rounded-none md:rounded-l-lg shadow-xl md:shadow-none">
+                    <h4 class="hidden md:block text-xl text-gray-400">Bienvenido a</h4>
+                    <h3 class="hidden md:block font-bold text-2xl text-gray-700">HOTEL AMANEE</h3>
+                    <p class="text-gray-600 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione itaque perspiciatis quod sapiente quidem, vero consectetur quae iure error tempore reprehenderit unde veritatis fugit iusto nemo amet. Assumenda, quam facilis.</p>
+                    <a class="flex items-baseline mt-3 text-blue-600 hover:text-blue-900 focus:text-blue-900" href="">
+                        <span>Conocer más de Amanee</span>
+                        <span class="text-xs ml-1">&#x279c;</span>
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+  
+  
+
+        <div class="relative rounded-lg flex flex-col md:flex-row items-center md:shadow-xl md:h-72 mx-2 my-10">
+        
+        <div class="z-0 order-1 md:order-2 relative w-full md:w-2/5 h-80 md:h-full overflow-hidden rounded-lg md:rounded-none md:rounded-r-lg">
+            <div class="absolute inset-0 w-full h-full object-fill object-center bg-blue-400 bg-opacity-30 bg-cover bg-bottom" style="background-image: url( https://images.unsplash.com/photo-1525302220185-c387a117886e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80 ); background-blend-mode: multiply;"></div>
+            <div class="md:hidden absolute inset-0 h-full p-6 pb-6 flex flex-col-reverse justify-start items-start bg-gradient-to-b from-transparent via-transparent to-gray-900">
+                <h3 class="w-full font-bold text-2xl text-white leading-tight mb-2">HOTEL AMANEE</h3>
+                <h4 class="w-full text-xl text-gray-100 leading-tight">Bienvenido a</h4>
+            </div>
+            <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="50,0 100,0 50,100 0,100" />
+            </svg>
+        </div>
+
+        <div class="z-10 order-2 md:order-1 w-full h-full md:w-3/5 flex items-center -mt-6 md:mt-0">
+            <div class="p-8 md:pr-18 md:pl-14 md:py-12 mx-2 md:mx-0 h-full bg-white rounded-lg md:rounded-none md:rounded-l-lg shadow-xl md:shadow-none">
+                <h4 class="hidden md:block text-xl text-gray-400">Bienvenido a</h4>
+                <h3 class="hidden md:block font-bold text-2xl text-gray-700">HOTEL AMANEE</h3>
+                <p class="text-gray-600 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione itaque perspiciatis quod sapiente quidem, vero consectetur quae iure error tempore reprehenderit unde veritatis fugit iusto nemo amet. Assumenda, quam facilis.</p>
+                <a class="flex items-baseline mt-3 text-blue-600 hover:text-blue-900 focus:text-blue-900" href="">
+                    <span>Conocer más de Amanee</span>
+                    <span class="text-xs ml-1">&#x279c;</span>
+                </a>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</div>
+
+<section class="text-gray-600 body-font bg-gradient-to-r from-[#7bc2b0] to-[#e5f9f6]">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/601x361">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/603x363">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/602x362">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/605x365">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/606x366">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--CONTACTO-->
+  <div id="contact-form" class="flex py-10 items-center justify-start bg-gradient-to-r from-[#7bc2b0] to-[#e5f9f6]">
+    <div class="mx-auto w-full max-w-lg shadow-lg rounded-2xl p-4 my-3 bg-gradient-to-r from-[#7bc2b0] to-white">
+      <h1 class="text-4xl font-medium text-center">Contactenos!</h1>
+      <p class="mt-4 mb-4">Envianos un email a <a href="mailto:mirsanlab@gmail.com" class="text-blue-600 hover:underline">mirsanlab@gmail.com</a> o escribe un mensaje aquí:</p>
+  
+      <form #emailForm="ngForm" (ngSubmit)="enviarEmail(emailForm.value)">
+  
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" /> 
+        <div class="grid gap-6 sm:grid-cols-2">
+          <div class="relative z-0">
+            <input [(ngModel)]="name" type="text" name="name" required class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+            <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Nombre</label>
+          </div>
+          <div class="relative z-0">
+            <input [(ngModel)]="email" type="text" name="email" required class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+            <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Su email</label>
+          </div>
+          <div class="relative z-0 col-span-2">
+            <textarea [(ngModel)]="message" name="message" required rows="5" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" "></textarea>
+            <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Escriba aquí el mensaje</label>
+          </div>
+        </div>
+        <button type="submit" [disabled]="!emailForm.valid" class="mt-5 rounded-md px-10 py-2 text-white  
+        bg-black enabled:hover:border-gray-400 disabled:opacity-75 
+        {{ !emailForm.valid ? 'bg-gray-500 cursor-not-allowed' : 'bg-black hover:bg-gray-700' }}">Enviar!</button>
+      </form>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+  <footer class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+    <div class="max-w-screen-xl px-4 py-5 mx-auto sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div>
+            <div class="flex items-center">
+                <img src="assets/img/MirsanLogo.png" alt="Mirsan Lab. Logo" class="h-6 w-6"/>
+               <div class="text-lg font-bold text-gray-800 md:text-xl p-2">
+                    <a href="#">Mirsan Lab.</a>
+               </div>
+            </div>
+
+          <p class="max-w-xs mt-4 text-sm text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
+          </p>
+          <div class="flex mt-8 space-x-6 text-gray-600">
+            <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> Facebook </span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
+              </svg>
+            </a>
+            
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <p class="font-medium">
+              Información
+            </p>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <a class="hover:opacity-75" href> Nosotros </a>
+            </nav>
+          </div>
+          <div>
+            <p class="font-medium">
+              Servicios
+            </p>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <a class="hover:opacity-75" href> 1on1 Coaching </a>
+              <a class="hover:opacity-75" href> Company Review </a>
+              <a class="hover:opacity-75" href> Accounts Review </a>
+              <a class="hover:opacity-75" href> HR Consulting </a>
+              <a class="hover:opacity-75" href> SEO Optimisation </a>
+            </nav>
+          </div>
+          <div>
+            <p class="font-medium">
+              Helpful Links
+            </p>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <a class="hover:opacity-75" href="#contact-form"> Contacto </a>
+              <a class="hover:opacity-75" href> Envianos un correo! </a>
+            </nav>
+          </div>
+          
+        </div>
+      </div>
+      <p class="mt-8 text-xs text-gray-800">
+        © 2023 Mirsan Lab
+      </p>
+    </div>
+  </footer>
+
+
