@@ -12,10 +12,6 @@ import { ToastrService } from 'ngx-toastr';
 export class AppComponent {
   title = 'Mirsan Laboratorio';
 
-  @Input() latitud = -26.87058630649084;
-  @Input() longitud = -60.21387102373372;
-
-
   name: String;
   email: String;
   message: String;
@@ -33,9 +29,10 @@ export class AppComponent {
     this.emailService.enviarEmail(nuevoEmail).subscribe(
       (emailEnviado) => {
         this.toastr.success('Correo enviado con éxito');
+        //this.toastr.success(`Docente asignado con éxito a ${emailEnviado.name}`, 'Éxito');
       },
       (error) => {
-        this.toastr.error(error);
+        this.toastr.error(error.error.message);
       }
     );
   }
