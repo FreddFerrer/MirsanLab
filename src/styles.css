@@ -12,3 +12,12 @@ html {
 .shadow-text {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
+
+  .invert-logo {
+    filter: invert(1);
+  }
+
+body {
+  background: linear-gradient(to right, #7bc2b0, #e5f9f6);
+
+}
