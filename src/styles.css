@@ -21,3 +21,7 @@ body {
   background: linear-gradient(to right, #7bc2b0, #e5f9f6);
 
 }
+
+.bg-radial-gradient {
+  background: radial-gradient(circle, #7bc2b0 0%, #4d433f 10%, transparent 40%);
+}
